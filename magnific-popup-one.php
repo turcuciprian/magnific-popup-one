@@ -19,8 +19,6 @@
               if($dir.'/abExport.php'){
                 require_once 'abExport.php';
               }
-
-
 //magnific popup one enqueue script
  function mpoEnqueue(){
    wp_enqueue_script('mpoScripts', plugin_dir_url( __FILE__ ) .'src/jquery.magnific-popup.min.js');
