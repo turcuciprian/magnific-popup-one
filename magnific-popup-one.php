@@ -28,6 +28,7 @@
          wp_enqueue_script('mpoMagnificScripts', plugin_dir_url(__FILE__).'src/jquery.magnific-popup.min.js', array('jquery'));
          wp_enqueue_script('mpoCustomScript', plugin_dir_url(__FILE__).'src/script.js', array('jquery', 'mpoMagnificScripts'));
 
+         //custom values
          $mpoApplyAll = $abGen->getField('abOption_cPage_mpo1', 'mpoTab1Settings', 'mpoApplyAll');
          $mpoCustImageClass = $abGen->getField('abOption_cPage_mpo1', 'mpoTab1Settings', 'mpoCustImageClass');
          $mpoApplyToGallery = $abGen->getField('abOption_cPage_mpoAdminPage1','mpoTab1Settings','mpoApplyToGallery');
