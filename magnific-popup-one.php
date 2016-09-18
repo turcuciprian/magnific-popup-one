@@ -22,15 +22,41 @@
  function mpoEnqueue()
  {
      global $abGen;
-     $mpoAffectGallery = $abGen->getField('abOption_cPage_mpo1', 'tab1', 'mpoAffectGallery');
+     $mpoAffectGallery = $abGen->getField('abOption_cPage_mpo1', 'mpoTab1Settings', 'mpoAffectGallery');
      if ($mpoAffectGallery) {
          wp_enqueue_script('jquery');
          wp_enqueue_script('mpoMagnificScripts', plugin_dir_url(__FILE__).'src/jquery.magnific-popup.min.js', array('jquery'));
          wp_enqueue_script('mpoCustomScript', plugin_dir_url(__FILE__).'src/script.js', array('jquery', 'mpoMagnificScripts'));
-         $mpoCustImageClass = $abGen->getField('abOption_cPage_mpo1', 'tab1', 'mpoCustImageClass');
-         $inlineScript = "$('.".$mpoCustImageClass."').magnificPopup({type:'image'});";
+
+         $mpoApplyAll = $abGen->getField('abOption_cPage_mpo1', 'mpoTab1Settings', 'mpoApplyAll');
+         $mpoCustImageClass = $abGen->getField('abOption_cPage_mpo1', 'mpoTab1Settings', 'mpoCustImageClass');
+         $mpoApplyToGallery = $abGen->getField('abOption_cPage_mpoAdminPage1','mpoTab1Settings','mpoApplyToGallery');
+         $mpoCycle = $abGen->getField('abOption_cPage_mpoAdminPage1','mpoTab1Settings','mpoCycle');
+
+         if($mpoApplyToGallery){
+           $mpoCustImageClass = '.gallery-icon a';
+         }
+         $galleryEnabled='';
+         if($mpoCycle){
+           $galleryEnabled = ",
+            gallery: {
+              enabled: true
+            }";
+         }
+
+         if (!empty($mpoCustImageClass)) {
+             $inlineScript = "
+             jQuery(document).ready(function($){
+               $('".$mpoCustImageClass."').magnificPopup({
+                 type:'image'
+                 ".$galleryEnabled."
+                });
+             });
+
+             ";
+         }
          wp_add_inline_script('mpoCustomScript', $inlineScript);
-         wp_enqueue_style('mpoMAgnificStyles', plugin_dir_url(__FILE__).'src/jquery.magnific-popup.css');
+         wp_enqueue_style('mpoMAgnificStyles2', plugin_dir_url(__FILE__).'src/magnific-popup.css');
      }
  }
 
