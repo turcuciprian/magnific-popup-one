@@ -1,6 +1,6 @@
 === Magnific Popup One ===
 Contributors: rootabout
-Donate link: http://example.com/
+Donate link: http://admin-builder.com
 Tags: comments, spam
 Requires at least: 4.6
 Tested up to: 4.6.1
@@ -12,7 +12,7 @@ A plugin that Integrates the magnific popup popup script to your site.
 
 == Description ==
 
-A Magnific Popup One Implementation for wordpress, integrating the jquery plugin into a wordpress plugin and allowing you ti change options trough the admin panel pages.
+A Magnific Popup script implementation for wordpress, integrating the jquery plugin into a wordpress plugin and allowing you ti change options trough the admin panel pages.
 
 == Installation ==
 
