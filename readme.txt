@@ -13,6 +13,7 @@ A plugin that Integrates the magnific popup popup script to your site.
 == Description ==
 
 A Magnific Popup script implementation for wordpress, integrating the jquery plugin into a wordpress plugin and allowing you ti change options trough the admin panel pages.
+Created with the service at http://admin-builder.com.
 
 == Installation ==
 
