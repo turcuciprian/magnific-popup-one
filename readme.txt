@@ -4,7 +4,7 @@ Donate link: http://admin-builder.com
 Tags: comments, spam
 Requires at least: 4.6
 Tested up to: 4.6.1
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,15 +40,22 @@ Check the "cycle trough images" checkboxin the "MPO Settings" Admin Page.
 
 == Screenshots ==
 
-1. Admin Page screen
-2. Popup example with gallery cycle activated
+1. Admin Page screen General Settings
+2. Admin Page More options
+3. Popup example with gallery cycle activated
 
 == Changelog ==
 
 = 1.0 =
 * First Version Push
 
+= 1.1 =
+* Added most  Magnific popup options in the admin panel
+
 == Upgrade Notice ==
 
 = 1.0 =
 * First Version Push
+
+= 1.1 =
+* Nothing impacts previous functionality
