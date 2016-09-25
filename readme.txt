@@ -42,7 +42,6 @@ Check the "cycle trough images" checkboxin the "MPO Settings" Admin Page.
 
 1. Admin Page screen General Settings
 2. Admin Page More options
-3. Popup example with gallery cycle activated
 
 == Changelog ==
 
