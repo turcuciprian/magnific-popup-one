@@ -59,3 +59,4 @@ Check the "cycle trough images" checkboxin the "MPO Settings" Admin Page.
 
 = 1.1 =
 * Nothing impacts previous functionality
+
